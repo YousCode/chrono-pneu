@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-barlow), sans-serif;
+  background: #000;
+}
+
+.font-display {
+  font-family: var(--font-oswald), sans-serif;
+}
+
+.lightning-grid {
+  background-image:
+    radial-gradient(circle at 15% 85%, rgba(250, 204, 21, 0.24), transparent 28%),
+    radial-gradient(circle at 82% 72%, rgba(249, 115, 22, 0.22), transparent 30%),
+    repeating-linear-gradient(
+      115deg,
+      transparent,
+      transparent 30px,
+      rgba(250, 204, 21, 0.05) 31px,
+      rgba(250, 204, 21, 0.05) 32px
+    );
+  animation: pulse-light 4.5s ease-in-out infinite;
+}
+
+.flame-overlay {
+  background-image:
+    radial-gradient(circle at 20% 100%, rgba(249, 115, 22, 0.2), transparent 32%),
+    radial-gradient(circle at 75% 96%, rgba(250, 204, 21, 0.2), transparent 30%);
+  pointer-events: none;
+}
+
+.glow {
+  background: radial-gradient(circle, rgba(250, 204, 21, 0.34) 0%, transparent 68%);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  z-index: -1;
+}
+
+.btn-primary:hover .glow {
+  opacity: 1;
+}
+
+.btn-primary::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -110%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.22), transparent);
+  transition: left 0.55s ease;
+}
+
+.btn-primary:hover::before {
+  left: 110%;
+}
+
+@keyframes pulse-light {
+  0% {
+    opacity: 0.82;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.82;
+  }
+}
