@@ -3,6 +3,8 @@
 
 # next.js
 /.next/
+/.next_broken_*/
+/.next_stale_*/
 /out/
 
 # production
