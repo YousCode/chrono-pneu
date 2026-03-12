@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Chrono Pneus",
-  description: "Site vitrine Chrono Pneus a Epinay-sur-Seine"
+  description: "Site vitrine Chrono Pneus à Épinay-sur-Seine"
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

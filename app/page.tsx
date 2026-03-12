@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
@@ -76,7 +75,7 @@ export default function LandingPage() {
   const services: { icon: ServiceIconKey; title: string; desc: string }[] = [
     { icon: "wrench", title: "Montage Rapide", desc: "15min/pneu" },
     { icon: "check", title: "Prix Transparents", desc: "Devis clair" },
-    { icon: "timer", title: "RDV Express", desc: "Meme jour" },
+    { icon: "timer", title: "RDV Express", desc: "Même jour" },
     { icon: "navigation", title: "Stock Disponible", desc: "Pneus en stock" }
   ];
 
@@ -85,77 +84,77 @@ export default function LandingPage() {
       author: "Adam 94",
       stars: 5,
       time: "il y a 2 mois",
-      text: "Service impeccable du debut a la fin ! Le personnel est accueillant, tres professionnel et prend vraiment le temps d'expliquer les choses.",
-      visited: "Visite en decembre 2025"
+      text: "Service impeccable du début à la fin ! Le personnel est accueillant, très professionnel et prend vraiment le temps d'expliquer les choses.",
+      visited: "Visite en décembre 2025"
     },
     {
       author: "Anass 94",
       stars: 5,
       time: "il y a 2 mois",
-      text: "Excellent service ! Tres bon accueil, equipe professionnelle et a l'ecoute. Le changement de pneus a ete rapide et propre.",
-      visited: "Visite en decembre 2025"
+      text: "Excellent service ! Très bon accueil, équipe professionnelle et à l'écoute. Le changement de pneus a été rapide et propre.",
+      visited: "Visite en décembre 2025"
     },
     {
       author: "Saran Diallo",
       stars: 5,
       time: "il y a 2 mois",
-      text: "Tres bon garage ! Super accueil ! Equipe professionnelle, super agreable et tres rapide en 10/15min mes pneus ont ete changes.",
-      visited: "Visite en decembre 2025"
+      text: "Très bon garage ! Super accueil ! Équipe professionnelle, super agréable et très rapide, en 10/15 min mes pneus ont été changés.",
+      visited: "Visite en décembre 2025"
     },
     {
       author: "Manel El Guehoudi",
       stars: 5,
       time: "il y a 2 mois",
-      text: "Tres bon accueil dans ce garage, l'equipe est professionnelle et a l'ecoute. Service rapide et de qualite.",
-      visited: "Visite en decembre 2025"
+      text: "Très bon accueil dans ce garage, l'équipe est professionnelle et à l'écoute. Service rapide et de qualité.",
+      visited: "Visite en décembre 2025"
     },
     {
       author: "Gt D",
       stars: 5,
       time: "il y a 2 mois",
-      text: "Une equipe accueillante et tres professionnelle, avec de bons conseils. Les roues ont ete changees en quelques minutes.",
-      visited: "Visite en decembre 2025"
+      text: "Une équipe accueillante et très professionnelle, avec de bons conseils. Les roues ont été changées en quelques minutes.",
+      visited: "Visite en décembre 2025"
     },
     {
       author: "Hani _fa",
       stars: 5,
       time: "il y a 2 mois",
-      text: "Tres satisfait de mon experience dans ce garage pour l'achat de pneus. Bon conseil, service rapide et efficace.",
-      visited: "Visite en decembre 2025"
+      text: "Très satisfait de mon expérience dans ce garage pour l'achat de pneus. Bon conseil, service rapide et efficace.",
+      visited: "Visite en décembre 2025"
     },
     {
       author: "M.Y B",
       stars: 5,
       time: "il y a 5 mois",
-      text: "Je suis passe samedi 13/09, en moins de dix minutes mon pneu etait change remonte, franchement je recommande.",
+      text: "Je suis passé samedi 13/09, en moins de dix minutes mon pneu était changé/remonté, franchement je recommande.",
       visited: "Visite en septembre 2025"
     },
     {
       author: "Bekkay El guehoudi",
       stars: 5,
       time: "il y a 2 mois",
-      text: "Equipe tres professionnelle, j'ai achete 4 pneus Michelin, tres bon rapport qualite prix, en plus ils etaient en stock.",
-      visited: "Visite en decembre 2025"
+      text: "Équipe très professionnelle, j'ai acheté 4 pneus Michelin, très bon rapport qualité-prix, en plus ils étaient en stock.",
+      visited: "Visite en décembre 2025"
     },
     {
       author: "najate boukrit",
       stars: 5,
       time: "il y a 2 mois",
-      text: "Bonjour, personnel tres reactif, efficace et tres serviable.",
+      text: "Bonjour, personnel très réactif, efficace et très serviable.",
       visited: "Visite en octobre 2025"
     },
     {
       author: "Habib Beyour",
       stars: 5,
       time: "il y a un mois",
-      text: "Merci pour l'efficacite et la rapidite, equipe tres professionnelle. Merci encore.",
+      text: "Merci pour l'efficacité et la rapidité, équipe très professionnelle. Merci encore.",
       visited: "Visite en janvier 2026"
     },
     {
       author: "Myriam Kriche",
       stars: 5,
       time: "il y a 7 mois",
-      text: "Tres satisfaite de mon experience chez Chrono Pneu ! Accueil chaleureux, equipe a l'ecoute et de tres bon conseil.",
+      text: "Très satisfaite de mon expérience chez Chrono Pneu ! Accueil chaleureux, équipe à l'écoute et de très bon conseil.",
       visited: "Visite en juillet 2025"
     },
     {
@@ -163,83 +162,83 @@ export default function LandingPage() {
       stars: 5,
       time: "il y a un an",
       text: "Excellent service, je recommande.",
-      visited: "Visite en fevrier 2025"
+      visited: "Visite en février 2025"
     },
     {
       author: "Heba",
       stars: 5,
       time: "il y a 2 mois",
       text: "Un accueil chaleureux et un service rapide, je recommande !",
-      visited: "Visite en decembre 2025"
+      visited: "Visite en décembre 2025"
     },
     {
       author: "YOUNES BELHIBA",
       stars: 5,
       time: "il y a 10 mois",
-      text: "Tres bon rapport qualite, pneus d'occasion sur 308 depuis novembre: adherence nickel et confort de route.",
+      text: "Très bon rapport qualité, pneus d'occasion sur 308 depuis novembre : adhérence nickel et confort de route.",
       visited: "Visite en avril 2025"
     },
     {
       author: "said oujda",
       stars: 5,
       time: "il y a un an",
-      text: "Je tiens a exprimer mon avis tres favorable sur l'experience que j'ai eue chez Chrono Pneus a Epinay-sur-Seine.",
-      visited: "Visite en decembre 2024"
+      text: "Je tiens à exprimer mon avis très favorable sur l'expérience que j'ai eue chez Chrono Pneus à Épinay-sur-Seine.",
+      visited: "Visite en décembre 2024"
     },
     {
       author: "Pantcho Nkc",
       stars: 5,
       time: "il y a 10 mois",
-      text: "Tres bon accueil, prise en charge rapide et efficace. Je recommande fortement.",
+      text: "Très bon accueil, prise en charge rapide et efficace. Je recommande fortement.",
       visited: "Visite en avril 2025"
     },
     {
       author: "zozo vesso",
       stars: 5,
       time: "il y a 7 mois",
-      text: "2 pneus d'occasion changes a super prix et deja eu une meche gratuite, merci.",
+      text: "2 pneus d'occasion changés à super prix et déjà eu une mèche gratuite, merci.",
       visited: "Visite en juillet 2025"
     },
     {
       author: "Wacil",
       stars: 5,
       time: "il y a 2 mois",
-      text: "Changement de pneu rapide, rien a dire !",
-      visited: "Visite en decembre 2025"
+      text: "Changement de pneu rapide, rien à dire !",
+      visited: "Visite en décembre 2025"
     },
     {
       author: "Vincent PONTHIER",
       stars: 5,
       time: "il y a 8 mois",
-      text: "Experience fort agreable, personnel qualifie, rapide et prix au top.",
+      text: "Expérience fort agréable, personnel qualifié, rapide et prix au top.",
       visited: "Visite en juin 2025"
     },
     {
       author: "Ehsan Ali Khan",
       stars: 5,
       time: "il y a un an",
-      text: "Excellente experience dans ce garage, service rapide. Venu pour une crevaison, tout s'est tres bien passe.",
-      visited: "Visite en decembre 2024"
+      text: "Excellente expérience dans ce garage, service rapide. Venu pour une crevaison, tout s'est très bien passé.",
+      visited: "Visite en décembre 2024"
     },
     {
       author: "Frederic Joel",
       stars: 1,
       time: "il y a 7 mois",
-      text: "Si vous etes specialises sur les pneus, faites que ca et non pas la mecanique.",
-      visited: "Visite en aout 2025"
+      text: "Si vous êtes spécialisés sur les pneus, faites que ça et non pas la mécanique.",
+      visited: "Visite en août 2025"
     },
     {
       author: "jonathan melgar",
       stars: 5,
       time: "il y a 11 mois",
-      text: "Super service. Efficace. Tres bon rapport qualite prix.",
+      text: "Super service. Efficace. Très bon rapport qualité-prix.",
       visited: "Visite en mars 2025"
     },
     {
       author: "Samir Dali",
       stars: 5,
       time: "il y a un an",
-      text: "Tres bon prix, service rapide, bonne communication et patron super sympa.",
+      text: "Très bon prix, service rapide, bonne communication et patron super sympa.",
       visited: "Visite en janvier 2025"
     }
   ];
@@ -251,15 +250,16 @@ export default function LandingPage() {
     <main className="overflow-x-hidden bg-gradient-to-b from-black to-[#0B0B0B] text-white">
       <header className="fixed left-0 top-0 z-50 h-16 w-full border-b-4 border-[#ffd84a] bg-[#f5c400] shadow-2xl sm:h-20 lg:h-24">
         <div className="mx-auto flex h-full max-w-7xl items-center justify-between px-3 sm:px-6 lg:px-8">
-          <div className="flex min-w-0 items-center">
-            <Image
-              src="/logo-chrono.png"
-              alt="Logo Chrono Pneus"
-              width={260}
-              height={92}
-              priority
-              className="h-9 w-auto object-contain drop-shadow-[0_6px_10px_rgba(0,0,0,0.2)] sm:h-11 lg:h-14"
-            />
+          <div className="flex min-w-0 items-center gap-2 sm:gap-3">
+            <div className="flex h-[calc(100%-16px)] max-h-12 w-28 items-center justify-center overflow-hidden rounded-md bg-[#f5c400] sm:h-[calc(100%-18px)] sm:max-h-14 sm:w-36 lg:h-[calc(100%-20px)] lg:max-h-16 lg:w-44">
+              <img
+                src="/logo-chrono.png"
+                alt="Logo Chrono Pneus"
+                width={260}
+                height={92}
+                className="h-full w-full object-contain"
+              />
+            </div>
           </div>
           <div className="flex shrink-0 items-center gap-2 sm:gap-3 lg:gap-4">
             <a href="tel:0640821325" className="group inline-flex items-center">
@@ -298,7 +298,7 @@ export default function LandingPage() {
             <div>
               <p className="mb-6 inline-flex items-center gap-2 rounded-full border border-yellow-400/50 bg-yellow-500/20 px-4 py-2 text-xs font-bold text-yellow-400 backdrop-blur-sm sm:mb-8 sm:gap-3 sm:px-6 sm:py-3 sm:text-sm">
                 <Sparkles className="h-5 w-5" />
-                #1 Pneus Epinay-sur-Seine • Ouvert 7j/7
+                #1 Pneus Épinay-sur-Seine • Ouvert 7j/7
               </p>
               <h1
                 ref={heroRef}
@@ -306,9 +306,11 @@ export default function LandingPage() {
               >
                 <span className="block text-5xl text-white sm:text-6xl md:text-7xl lg:text-8xl">CHRONO</span>
                 <span className="block text-6xl text-yellow-400 sm:text-7xl md:text-8xl lg:text-9xl">Pneus</span>
-                <span className="mt-2 block text-2xl font-normal text-white sm:text-3xl md:text-4xl lg:text-5xl">4 achetes = Parallelisme OFFERT</span>
+                <span className="mt-2 block text-2xl font-normal text-white sm:text-3xl md:text-4xl lg:text-5xl">4 achetés = parallélisme OFFERT</span>
               </h1>
-              <p className="mb-10 max-w-lg text-base leading-relaxed text-zinc-300 sm:mb-12 sm:text-lg md:text-xl">Montage express 15min • Prix imbattables • Stock 5000 pneus • Garage pro certifie</p>
+              <p className="mb-10 max-w-2xl text-base leading-relaxed text-zinc-300 sm:mb-12 sm:text-lg md:text-xl">
+                Montage express en 15 min • Prix imbattables • Stock immédiat • Équipe pro certifiée
+              </p>
               <div className="flex flex-wrap gap-3 sm:gap-4">
                 <Link
                   href="#services"
@@ -332,7 +334,7 @@ export default function LandingPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mb-24 text-center">
             <h2 className="mb-6 bg-gradient-to-r from-yellow-400 to-yellow-500 bg-clip-text text-5xl font-black text-transparent md:text-7xl">Pourquoi Chrono Pneus ?</h2>
-            <p className="mx-auto max-w-2xl text-xl text-zinc-400">Service ultra-rapide, prix choc, devis clair. Votre garage pneus a Epinay-sur-Seine.</p>
+            <p className="mx-auto max-w-2xl text-xl text-zinc-400">Service ultra-rapide, prix choc, devis clair. Votre garage pneus à Épinay-sur-Seine.</p>
           </div>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             {services.map((service, i) => {
@@ -355,37 +357,45 @@ export default function LandingPage() {
             Avis Google
           </h2>
           <p className="mx-auto mb-10 max-w-3xl text-zinc-300">
-            Defilement horizontal. Clique sur un avis pour ouvrir la page Google.
+            Défilement horizontal. Cliquez sur un avis pour ouvrir la page Google.
           </p>
 
           <div className="review-marquee">
             <div className="review-track">
-              {[...testimonials, ...testimonials].map((t, i) => (
-                <a
-                  key={`${t.author}-${i}`}
-                  href={googleReviewsUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="testimonial review-card block rounded-3xl border border-yellow-500/20 bg-gradient-to-b from-zinc-900 to-black p-6 text-left shadow-2xl transition hover:border-yellow-400/70 hover:shadow-yellow-500/30"
+              {[0, 1].map((loopIndex) => (
+                <div
+                  key={`review-loop-${loopIndex}`}
+                  className="review-loop"
+                  aria-hidden={loopIndex === 1}
                 >
-                  <p className="text-lg font-bold text-white">{t.author}</p>
-                  <p className="text-sm text-zinc-400">Avis de Google</p>
+                  {testimonials.map((t, i) => (
+                    <a
+                      key={`${loopIndex}-${t.author}-${i}`}
+                      href={googleReviewsUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="testimonial review-card block rounded-3xl border border-yellow-500/20 bg-gradient-to-b from-zinc-900 to-black p-6 text-left shadow-2xl transition hover:-translate-y-1 hover:border-yellow-400/70 hover:shadow-yellow-500/30"
+                    >
+                      <p className="text-lg font-bold text-white">{t.author}</p>
+                      <p className="text-sm text-zinc-400">Avis de Google</p>
 
-                  <div className="mt-3 flex items-center gap-1">
-                    {Array.from({ length: 5 }).map((_, j) => (
-                      <Star
-                        key={j}
-                        className={`h-5 w-5 ${j < t.stars ? "fill-yellow-400 text-yellow-400" : "text-zinc-600"}`}
-                      />
-                    ))}
-                    <span className="ml-2 text-sm font-semibold text-zinc-300">
-                      {t.stars}/5 · {t.time}
-                    </span>
-                  </div>
+                      <div className="mt-3 flex items-center gap-1">
+                        {Array.from({ length: 5 }).map((_, j) => (
+                          <Star
+                            key={j}
+                            className={`h-5 w-5 ${j < t.stars ? "fill-yellow-400 text-yellow-400" : "text-zinc-600"}`}
+                          />
+                        ))}
+                        <span className="ml-2 text-sm font-semibold text-zinc-300">
+                          {t.stars}/5 · {t.time}
+                        </span>
+                      </div>
 
-                  <p className="mt-4 line-clamp-4 text-sm leading-relaxed text-zinc-200">{t.text}</p>
-                  <p className="mt-4 text-xs text-zinc-400">{t.visited}</p>
-                </a>
+                      <p className="mt-4 line-clamp-4 text-sm leading-relaxed text-zinc-200">{t.text}</p>
+                      <p className="mt-4 text-xs text-zinc-400">{t.visited}</p>
+                    </a>
+                  ))}
+                </div>
               ))}
             </div>
           </div>
@@ -397,16 +407,16 @@ export default function LandingPage() {
           <div className="rounded-3xl border border-yellow-500/30 bg-zinc-900/50 p-6 backdrop-blur-xl sm:p-10 md:p-14 lg:p-16">
             <MapPin className="mx-auto mb-8 h-20 w-20 text-yellow-400" />
             <h2 className="mb-8 bg-gradient-to-r from-white via-yellow-400 to-white bg-clip-text text-5xl font-black text-transparent md:text-7xl">Nos adresses</h2>
-            <p className="mx-auto mb-12 max-w-2xl text-xl text-zinc-400">Ouvert 7j/7 • RDV sous 1h • Appelez-nous des maintenant</p>
+            <p className="mx-auto mb-12 max-w-2xl text-xl text-zinc-400">Ouvert 7j/7 • RDV sous 1h • Appelez-nous dès maintenant</p>
 
             <div className="mb-12 grid gap-6 text-left md:grid-cols-2">
               <article className="overflow-hidden rounded-2xl border border-yellow-400/30 bg-black/40">
                 <div className="border-b border-yellow-400/20 p-5">
                   <p className="text-xl font-bold text-yellow-400 sm:text-2xl">42 bis Boulevard Foch</p>
-                  <p className="text-base text-zinc-300 sm:text-lg">93800 Epinay-sur-Seine</p>
+                  <p className="text-base text-zinc-300 sm:text-lg">93800 Épinay-sur-Seine</p>
                 </div>
                 <iframe
-                  title="Carte 42 bis Boulevard Foch Epinay-sur-Seine"
+                  title="Carte 42 bis Boulevard Foch Épinay-sur-Seine"
                   src="https://www.google.com/maps?q=42%20bis%20Boulevard%20Foch%2093800%20Epinay-sur-Seine&output=embed"
                   className="h-72 w-full sm:h-80 lg:h-[26rem]"
                   loading="lazy"
@@ -417,10 +427,10 @@ export default function LandingPage() {
               <article className="overflow-hidden rounded-2xl border border-yellow-400/30 bg-black/40">
                 <div className="border-b border-yellow-400/20 p-5">
                   <p className="text-xl font-bold text-yellow-400 sm:text-2xl">6 Avenue Joffre</p>
-                  <p className="text-base text-zinc-300 sm:text-lg">Epinay-sur-Seine</p>
+                  <p className="text-base text-zinc-300 sm:text-lg">Épinay-sur-Seine</p>
                 </div>
                 <iframe
-                  title="Carte 6 Avenue Joffre Epinay-sur-Seine"
+                  title="Carte 6 Avenue Joffre Épinay-sur-Seine"
                   src="https://www.google.com/maps?q=6%20Avenue%20Joffre%20Epinay-sur-Seine&output=embed"
                   className="h-72 w-full sm:h-80 lg:h-[26rem]"
                   loading="lazy"
@@ -442,16 +452,16 @@ export default function LandingPage() {
 
       <footer className="border-t border-zinc-800 bg-black/50 py-12">
         <div className="mx-auto max-w-7xl px-6 text-center">
-          <p className="mb-4 text-zinc-500">© 2026 Chrono Pneus - Tous droits reserves</p>
+          <p className="mb-4 text-zinc-500">© 2026 Chrono Pneus - Tous droits réservés</p>
           <div className="flex flex-col items-center justify-center gap-8 text-sm text-zinc-600 md:flex-row">
             <Link href="/mentions" className="transition-colors hover:text-yellow-400">
-              Mentions Legales
+              Mentions légales
             </Link>
             <Link href="/cgv" className="transition-colors hover:text-yellow-400">
               CGV
             </Link>
             <Link href="/confidentialite" className="transition-colors hover:text-yellow-400">
-              Confidentialite
+              Confidentialité
             </Link>
           </div>
         </div>
@@ -459,15 +469,19 @@ export default function LandingPage() {
 
       <style jsx global>{`
         .review-marquee {
+          --review-gap: 1rem;
           overflow: hidden;
           position: relative;
+          mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+          -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
         }
 
         .review-track {
-          display: flex;
-          gap: 1rem;
+          display: inline-flex;
+          gap: var(--review-gap);
           width: max-content;
-          animation: reviews-left 120s linear infinite;
+          will-change: transform;
+          animation: reviews-left 90s linear infinite;
           padding: 0.5rem 0.25rem;
         }
 
@@ -475,8 +489,13 @@ export default function LandingPage() {
           animation-play-state: paused;
         }
 
+        .review-loop {
+          display: inline-flex;
+          gap: var(--review-gap);
+        }
+
         .review-card {
-          width: 320px;
+          width: min(340px, 82vw);
           min-height: 260px;
           flex: 0 0 auto;
         }
@@ -486,7 +505,19 @@ export default function LandingPage() {
             transform: translateX(0);
           }
           100% {
-            transform: translateX(-50%);
+            transform: translateX(calc(-50% - (var(--review-gap) / 2)));
+          }
+        }
+
+        @media (max-width: 768px) {
+          .review-track {
+            animation-duration: 70s;
+          }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+          .review-track {
+            animation: none;
           }
         }
       `}</style>
